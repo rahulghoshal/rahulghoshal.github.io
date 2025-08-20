@@ -196,6 +196,44 @@ body.light .nav-toggle { color: #00ccff; }
       background: linear-gradient(90deg, #00ff99, #00ccff);
       margin: 10px auto 0; border-radius: 2px;
     }
+/* SKILLS */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.skill {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,255,153,0.2);
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0,255,153,0.5);
+}
+
+.skill i {
+  font-size: 2.5rem;
+  color: #00ff99;
+  margin-bottom: 12px;
+}
+
+.skill p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+body.light .skill {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+body.light .skill i { color: #00ccff; }
 
     /* PROJECTS */
     .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
@@ -279,6 +317,7 @@ body.light .social-icons a:hover { color: #00ccff; text-shadow: 0 0 15px #00ccff
       <a href="#hero" class="logo">Rahul Ghoshal</a>
       <ul class="nav-links">
         <li><a href="#projects">Projects</a></li>
+        <li><a href="skills">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -305,7 +344,35 @@ body.light .social-icons a:hover { color: #00ccff; text-shadow: 0 0 15px #00ccff
       <a href="#contact">Contact</a>
     </div>
   </section>
- 
+   <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <p>Data Science</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-robot"></i>
+        <p>Machine Learning</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-chart-line"></i>
+        <p>Data Visualization</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-project-diagram"></i>
+        <p>Statistical Analysis</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-code"></i>
+        <p>Python, R, SQL</p>
+      </div>
+      
+    </div>
+  </section>
+
+
   <!-- Projects -->
   <section id="projects">
   <h2 class="section-title">Projects</h2>
